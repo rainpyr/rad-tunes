@@ -1,6 +1,6 @@
 # Getting Started with Rad Tunes React App
 
-This project was designed for Publicis Sapient Code Challenge [Publicis Sapient](https://www.publicissapient.com/).
+This [Rad Tune project](https://github.com/rainpyr/rad-tunes) was designed for Publicis Sapient Code Challenge [Publicis Sapient](https://www.publicissapient.com/).
 
 A json file was provided as a back end API endpoint for HTTP API request. As no back end was designed, the file was saved in the public/db folder for access.
 
