@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.list {
+  text-align: left;
+}
+
+.App {  
+  background: center/contain no-repeat linear-gradient(135deg, rgb(145, 96, 96),rgb(219, 167, 71),rgb(214, 214, 72),rgb(84, 133, 84),rgb(64, 64, 93),rgb(175, 128, 175)); 
+  
+  letter-spacing: 2px;
+}
+
+h1 h3 {
+  color: rgb(15, 13, 13);
+  font: italic bold 3.2rem cursive;
+  text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
+}
+
+ol {
+  /* Remove defaults */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    
+  
+  /* Create counter */
+  counter-reset: list;
+}
+
+li {
+  /* Use CSS grid for spacing between marker and list item contents */
+  display: grid;
+  grid-template-columns: min-content 1000px;
+  column-gap: 20px;
+  font-family:monospace;
+  /* Increment counter */
+  counter-increment: list;
+}
+
+li::before {
+  /* Set content to an empty string */
+  content: counter(list);
+  
+  /* Add a background image for the marker */
+  background: center/contain no-repeat;
+  
+  /* Add animation */
+  animation: 3s linear 1s infinite spin;
+    
+  /* Create the box and center its contents */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  margin-left: 600px;
+  color: white;
+}
+
+.list {
+  margin-top: 15px;
+}
+
+.selection {
+  font-size: 25px;
+  font: italic bold 3.2rem cursive;
+  text-align: center;
+  background-color: bisque;
+  width:300px;
+  height:85px;
+  border:0px;
+  outline:none;
+}
+
+.wrapper{
+  border-radius:36px;
+  display:inline-block;
+  overflow:hidden;
+  background:#cccccc;
+  border:1px solid #cccccc;
+}
