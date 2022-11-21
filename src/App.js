@@ -85,22 +85,22 @@ class App extends React.Component {
   render() {
 
     return(
-      <div class="App">
+      <div className="App">
         <h1>Welcome to Rad Tunes</h1>
-          <h3>Please select a genre to explore</h3>
-            <div class="wrapper">
-              <select onChange={this.handleChange} class="selection">
+          <h3>Please select a genre to explore artists</h3>
+            <div className="wrapper">
+              <select onChange={this.handleChange} className="selection">
                   <option disabled selected value>---Select---</option>
                   {this.fetchGenre().map(optn => (
                         <option value={optn}>{optn}</option>
                   ))}
               </select>
             </div>
-            <div class="list">
+            <div className="list">
               {
                 this.state.loading
                 ?
-                <p>Loading list</p>
+                <p>Loading artist list</p>
                 :
                 <ol>
                 {this.handleListDisplay(this.state.genre).map(l => <li>{l}</li>)}

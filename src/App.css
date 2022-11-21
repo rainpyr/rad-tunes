@@ -14,7 +14,7 @@
 
 h1 h3 {
   color: rgb(15, 13, 13);
-  font: italic bold 3.2rem cursive;
+  font: italic bold 4rem cursive;
   text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
 }
 
@@ -46,19 +46,19 @@ li::before {
   /* Add a background image for the marker */
   background: center/contain no-repeat;
   
-  /* Add animation */
-  animation: 3s linear 1s infinite spin;
     
   /* Create the box and center its contents */
   width: 60px;
   height: 60px;
   display: flex;
-  margin-left: 600px;
+  justify-content: center;
   color: white;
 }
 
 .list {
   margin-top: 15px;
+  justify-content: center;
+  column-count: 3;
 }
 
 .selection {
